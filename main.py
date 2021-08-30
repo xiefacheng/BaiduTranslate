@@ -15,6 +15,7 @@ while True:
         if sheet.cell(row, 2).value is not None:
             row = row + 1
         else:
+            sheet.cell(row, 1, row - 1)
             sheet.cell(row, 2, word)
             sheet.cell(row, 3, select_word)
-            exl.wb.save('测试.xlsx')
+            exl.wb.save('百度翻译.xlsx')
