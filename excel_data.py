@@ -23,3 +23,5 @@ if __name__ == '__main__':
     exl = ExcelLoad(excel_path=r'C:\Users\Administrator\Documents\GitHub\BaiduTranslate\百度翻译.xlsx')
     sheet = exl.write_data('Sheet1')
     print(sheet.cell(1, 1).value)
+    # 获取表格的总行数
+    print(sheet.max_row)
